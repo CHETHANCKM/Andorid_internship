@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "698772189698",
+    "project_id": "android-internship",
+    "storage_bucket": "android-internship.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698772189698:android:4c4dbe3ddaf5d26691ad1b",
+        "android_client_info": {
+          "package_name": "com.btechviral.android.collegedatabaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698772189698-pp2e4bo4d12k9g5456oi9qd71av57tf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRCYj1qYTpYOjVEwD63pXs8oQDVRI72es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698772189698-pp2e4bo4d12k9g5456oi9qd71av57tf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
