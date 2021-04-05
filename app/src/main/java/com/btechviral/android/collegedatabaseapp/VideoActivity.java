@@ -5,15 +5,15 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.SystemClock;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -77,7 +77,7 @@ public class VideoActivity extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Toast.makeText(VideoActivity.this,
                             "Upload Complete", Toast.LENGTH_LONG).show();
-                    VideoUpload videoUpload = new VideoUpload(""+System.currentTimeMillis(), taskSnapshot.getDownloadUrl().toString());
+                    VideoUpload videoUpload = new VideoUpload(""+System.currentTimeMillis(), taskSnapshot.getMetadata().getReference().getDownloadUrl().toString());
                     progressBar.setProgress(0);
                     String uploadId = databaseReference.push().getKey();
                     databaseReference.child(semester).child("videos").child(uploadId).setValue(videoUpload);

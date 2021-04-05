@@ -17,59 +17,59 @@
         android:layout_alignLeft="@+id/quizButton" />
 
     <Button
-        android:background="@drawable/play"
         android:id="@+id/videoblogbutton"
         android:layout_width="130sp"
         android:layout_height="100sp"
-        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/projectButton"
-        android:layout_marginStart="23dp"
-        android:text=""
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="23dp" />
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/ic_launcher_foreground"
+        android:text="" />
 
     <Button
-        android:background="@drawable/chat"
         android:id="@+id/chatbutton"
         android:layout_width="130sp"
         android:layout_height="100sp"
         android:layout_alignStart="@+id/videoblogbutton"
+        android:layout_alignLeft="@+id/videoblogbutton"
         android:layout_alignTop="@+id/quizButton"
-        android:text=""
-        android:layout_alignLeft="@+id/videoblogbutton" />
+        android:background="@android:drawable/sym_action_chat"
+        android:text="" />
 
     <Button
-        android:background="@drawable/documents"
         android:id="@+id/documentsButton"
         android:layout_width="130sp"
         android:layout_height="100sp"
-        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/videoblogbutton"
+        android:layout_alignLeft="@+id/videoblogbutton"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="135dp"
-        android:text=""
-        android:layout_alignLeft="@+id/videoblogbutton" />
+        android:background="@drawable/ic_launcher_foreground"
+        android:text="" />
 
     <Button
-        android:background="@drawable/assignment"
         android:id="@+id/assignmentButton"
         android:layout_width="130sp"
         android:layout_height="100sp"
         android:layout_alignStart="@+id/projectButton"
+        android:layout_alignLeft="@+id/projectButton"
         android:layout_alignTop="@+id/documentsButton"
-        android:text=""
-        android:layout_alignLeft="@+id/projectButton" />
+        android:background="@drawable/ic_launcher_foreground"
+        android:text="" />
 
     <Button
-        android:background="@drawable/quiz"
         android:id="@+id/quizButton"
         android:layout_width="130sp"
         android:layout_height="100sp"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="26dp"
-        android:layout_marginTop="24dp"
-        android:text=""
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="26dp" />
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/ic_launcher_foreground"
+        android:text="" />
 
 </RelativeLayout>
